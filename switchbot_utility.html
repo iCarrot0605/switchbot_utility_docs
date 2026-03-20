@@ -412,6 +412,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_presence_sensor">switchbot_utility.switchbot_presence_sensor module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_presence_sensor.SwitchbotPresenceSensor"><code class="docutils literal notranslate"><span class="pre">SwitchbotPresenceSensor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_presence_sensor.SwitchbotPresenceSensor.get_detected"><code class="docutils literal notranslate"><span class="pre">SwitchbotPresenceSensor.get_detected()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_presence_sensor.SwitchbotPresenceSensor.get_lightLevel"><code class="docutils literal notranslate"><span class="pre">SwitchbotPresenceSensor.get_lightLevel()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_rgbic_neon_wire_light">switchbot_utility.switchbot_rgbic_neon_wire_light module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_rgbic_neon_wire_light.SwitchbotRGBICNeonWireLight"><code class="docutils literal notranslate"><span class="pre">SwitchbotRGBICNeonWireLight</span></code></a></li>
 </ul>
@@ -1925,6 +1933,29 @@ Switchbot API v1.1 sign header</p>
 <dt class="sig sig-object py" id="switchbot_utility.switchbot_plug_mini_us.SwitchbotPlugMiniUS.toggle">
 <span class="sig-name descname"><span class="pre">toggle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_plug_mini_us.SwitchbotPlugMiniUS.toggle" title="Link to this definition"></a></dt>
 <dd><p>Toggle plug state</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-switchbot_utility.switchbot_presence_sensor">
+<span id="switchbot-utility-switchbot-presence-sensor-module"></span><h2>switchbot_utility.switchbot_presence_sensor module<a class="headerlink" href="#module-switchbot_utility.switchbot_presence_sensor" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_presence_sensor.SwitchbotPresenceSensor">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">switchbot_utility.switchbot_presence_sensor.</span></span><span class="sig-name descname"><span class="pre">SwitchbotPresenceSensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deviceId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#switchbot_utility.switchbot_presence_sensor.SwitchbotPresenceSensor" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_device.SwitchbotDevice" title="switchbot_utility.switchbot_device.SwitchbotDevice"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotDevice</span></code></a>, <a class="reference internal" href="#switchbot_utility.battery_mixin.BatteryMixin" title="switchbot_utility.battery_mixin.BatteryMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">BatteryMixin</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_presence_sensor.SwitchbotPresenceSensor.get_detected">
+<span class="sig-name descname"><span class="pre">get_detected</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_presence_sensor.SwitchbotPresenceSensor.get_detected" title="Link to this definition"></a></dt>
+<dd><p>determines if human is detected</p>
+<p>Returns: True/False</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_presence_sensor.SwitchbotPresenceSensor.get_lightLevel">
+<span class="sig-name descname"><span class="pre">get_lightLevel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_presence_sensor.SwitchbotPresenceSensor.get_lightLevel" title="Link to this definition"></a></dt>
+<dd><p>Returns the level of illuminance of the ambience light</p>
+<p>Returns: 1-20</p>
 </dd></dl>
 
 </dd></dl>
