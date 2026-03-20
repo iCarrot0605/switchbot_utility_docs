@@ -131,7 +131,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_curtain">switchbot_utility.switchbot_curtain module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain"><code class="docutils literal notranslate"><span class="pre">SwitchbotCurtain</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.close"><code class="docutils literal notranslate"><span class="pre">SwitchbotCurtain.close()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_calibrate"><code class="docutils literal notranslate"><span class="pre">SwitchbotCurtain.get_calibrate()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_curtain_position"><code class="docutils literal notranslate"><span class="pre">SwitchbotCurtain.get_curtain_position()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_group"><code class="docutils literal notranslate"><span class="pre">SwitchbotCurtain.get_group()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_master"><code class="docutils literal notranslate"><span class="pre">SwitchbotCurtain.get_master()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.open"><code class="docutils literal notranslate"><span class="pre">SwitchbotCurtain.open()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.set_position"><code class="docutils literal notranslate"><span class="pre">SwitchbotCurtain.set_position()</span></code></a></li>
 </ul>
@@ -835,9 +838,54 @@ Switchbot API v1.1 sign header</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_calibrate">
+<span class="sig-name descname"><span class="pre">get_calibrate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_calibrate" title="Link to this definition"></a></dt>
+<dd><p>determines if the open position and the close position of
+a device have been properly calibrated or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the device has been calibrated, False otherwise</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_curtain_position">
 <span class="sig-name descname"><span class="pre">get_curtain_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_curtain_position" title="Link to this definition"></a></dt>
 <dd><p>Returns curtain position 0(open) to 100(close)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_group">
+<span class="sig-name descname"><span class="pre">get_group</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_group" title="Link to this definition"></a></dt>
+<dd><p>determines if a Curtain is paired with or grouped
+with another Curtain or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the device is part of a group, False otherwise</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_master">
+<span class="sig-name descname"><span class="pre">get_master</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_curtain.SwitchbotCurtain.get_master" title="Link to this definition"></a></dt>
+<dd><p>determines if a Curtain is the master device or not when
+paired with or grouped with another Curtain</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the device is the master device in a group, False otherwise</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
