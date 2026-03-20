@@ -310,6 +310,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_lock">switchbot_utility.switchbot_lock module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_lock.SwitchbotLock"><code class="docutils literal notranslate"><span class="pre">SwitchbotLock</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_lock.SwitchbotLock.deadbolt"><code class="docutils literal notranslate"><span class="pre">SwitchbotLock.deadbolt()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_lock.SwitchbotLock.get_door_state"><code class="docutils literal notranslate"><span class="pre">SwitchbotLock.get_door_state()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_lock.SwitchbotLock.get_lock_state"><code class="docutils literal notranslate"><span class="pre">SwitchbotLock.get_lock_state()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_lock.SwitchbotLock.lock"><code class="docutils literal notranslate"><span class="pre">SwitchbotLock.lock()</span></code></a></li>
@@ -320,9 +321,18 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_lock_lite">switchbot_utility.switchbot_lock_lite module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_lock_lite.SwitchbotLockLite"><code class="docutils literal notranslate"><span class="pre">SwitchbotLockLite</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_lock_lite.SwitchbotLockLite.deadbolt"><code class="docutils literal notranslate"><span class="pre">SwitchbotLockLite.deadbolt()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_lock_lite.SwitchbotLockLite.get_door_state"><code class="docutils literal notranslate"><span class="pre">SwitchbotLockLite.get_door_state()</span></code></a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_lock_pro">switchbot_utility.switchbot_lock_pro module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_lock_pro.SwitchbotLockPro"><code class="docutils literal notranslate"><span class="pre">SwitchbotLockPro</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_lock_ultra">switchbot_utility.switchbot_lock_ultra module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_lock_ultra.SwitchbotLockUltra"><code class="docutils literal notranslate"><span class="pre">SwitchbotLockUltra</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_meter">switchbot_utility.switchbot_meter module</a><ul>
@@ -1617,6 +1627,12 @@ Switchbot API v1.1 sign header</p>
 <dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_device.SwitchbotDevice" title="switchbot_utility.switchbot_device.SwitchbotDevice"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotDevice</span></code></a>, <a class="reference internal" href="#switchbot_utility.battery_mixin.BatteryMixin" title="switchbot_utility.battery_mixin.BatteryMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">BatteryMixin</span></code></a></p>
 <p>Switchbot Lock class</p>
 <dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_lock.SwitchbotLock.deadbolt">
+<span class="sig-name descname"><span class="pre">deadbolt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_lock.SwitchbotLock.deadbolt" title="Link to this definition"></a></dt>
+<dd><p>Disengage deadbolt or latch</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="switchbot_utility.switchbot_lock.SwitchbotLock.get_door_state">
 <span class="sig-name descname"><span class="pre">get_door_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_lock.SwitchbotLock.get_door_state" title="Link to this definition"></a></dt>
 <dd><p>Returns if closed or not</p>
@@ -1651,11 +1667,37 @@ Switchbot API v1.1 sign header</p>
 <dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_lock.SwitchbotLock" title="switchbot_utility.switchbot_lock.SwitchbotLock"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotLock</span></code></a></p>
 <p>Switchbot Lock Lite class</p>
 <dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_lock_lite.SwitchbotLockLite.deadbolt">
+<span class="sig-name descname"><span class="pre">deadbolt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#switchbot_utility.switchbot_lock_lite.SwitchbotLockLite.deadbolt" title="Link to this definition"></a></dt>
+<dd><p>Do Nothing, because Switchbot Lock Lite does not have a deadbolt or latch</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="switchbot_utility.switchbot_lock_lite.SwitchbotLockLite.get_door_state">
 <span class="sig-name descname"><span class="pre">get_door_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_lock_lite.SwitchbotLockLite.get_door_state" title="Link to this definition"></a></dt>
 <dd><p>Do Nothing, because Switchbot Lock Lite does not have a door sensor</p>
 </dd></dl>
 
+</dd></dl>
+
+</section>
+<section id="module-switchbot_utility.switchbot_lock_pro">
+<span id="switchbot-utility-switchbot-lock-pro-module"></span><h2>switchbot_utility.switchbot_lock_pro module<a class="headerlink" href="#module-switchbot_utility.switchbot_lock_pro" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_lock_pro.SwitchbotLockPro">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">switchbot_utility.switchbot_lock_pro.</span></span><span class="sig-name descname"><span class="pre">SwitchbotLockPro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deviceId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#switchbot_utility.switchbot_lock_pro.SwitchbotLockPro" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_lock.SwitchbotLock" title="switchbot_utility.switchbot_lock.SwitchbotLock"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotLock</span></code></a></p>
+<p>Switchbot Lock Pro class</p>
+</dd></dl>
+
+</section>
+<section id="module-switchbot_utility.switchbot_lock_ultra">
+<span id="switchbot-utility-switchbot-lock-ultra-module"></span><h2>switchbot_utility.switchbot_lock_ultra module<a class="headerlink" href="#module-switchbot_utility.switchbot_lock_ultra" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_lock_ultra.SwitchbotLockUltra">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">switchbot_utility.switchbot_lock_ultra.</span></span><span class="sig-name descname"><span class="pre">SwitchbotLockUltra</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deviceId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#switchbot_utility.switchbot_lock_ultra.SwitchbotLockUltra" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_lock.SwitchbotLock" title="switchbot_utility.switchbot_lock.SwitchbotLock"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotLock</span></code></a></p>
+<p>Switchbot Lock Ultra class</p>
 </dd></dl>
 
 </section>
