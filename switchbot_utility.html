@@ -198,6 +198,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_hub3">switchbot_utility.switchbot_hub3 module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_hub3.SwitchbotHub3"><code class="docutils literal notranslate"><span class="pre">SwitchbotHub3</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_hub3.SwitchbotHub3.get_moveDetected"><code class="docutils literal notranslate"><span class="pre">SwitchbotHub3.get_moveDetected()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_hub3.SwitchbotHub3.get_onlineStatus"><code class="docutils literal notranslate"><span class="pre">SwitchbotHub3.get_onlineStatus()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_humidifier">switchbot_utility.switchbot_humidifier module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_humidifier.SwitchbotHumidifier"><code class="docutils literal notranslate"><span class="pre">SwitchbotHumidifier</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_humidifier.SwitchbotHumidifier.get_auto"><code class="docutils literal notranslate"><span class="pre">SwitchbotHumidifier.get_auto()</span></code></a></li>
@@ -1206,6 +1214,41 @@ Switchbot API v1.1 sign header</p>
 <dt class="sig sig-object py" id="switchbot_utility.switchbot_hub2.SwitchbotHub2.get_temperature">
 <span class="sig-name descname"><span class="pre">get_temperature</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_hub2.SwitchbotHub2.get_temperature" title="Link to this definition"></a></dt>
 <dd><p>Returns temperature from Hub2</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-switchbot_utility.switchbot_hub3">
+<span id="switchbot-utility-switchbot-hub3-module"></span><h2>switchbot_utility.switchbot_hub3 module<a class="headerlink" href="#module-switchbot_utility.switchbot_hub3" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_hub3.SwitchbotHub3">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">switchbot_utility.switchbot_hub3.</span></span><span class="sig-name descname"><span class="pre">SwitchbotHub3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deviceId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#switchbot_utility.switchbot_hub3.SwitchbotHub3" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_hub2.SwitchbotHub2" title="switchbot_utility.switchbot_hub2.SwitchbotHub2"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotHub2</span></code></a></p>
+<p>Switchbot Hub3 class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_hub3.SwitchbotHub3.get_moveDetected">
+<span class="sig-name descname"><span class="pre">get_moveDetected</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_hub3.SwitchbotHub3.get_moveDetected" title="Link to this definition"></a></dt>
+<dd><p>determines if motion is detected</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if motion is detected, False otherwise</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_hub3.SwitchbotHub3.get_onlineStatus">
+<span class="sig-name descname"><span class="pre">get_onlineStatus</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_hub3.SwitchbotHub3.get_onlineStatus" title="Link to this definition"></a></dt>
+<dd><p>the connection status of the device.</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>online or offline</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
