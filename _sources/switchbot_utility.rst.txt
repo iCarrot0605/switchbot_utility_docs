@@ -172,10 +172,26 @@ switchbot\_utility.switchbot\_floor\_cleaning\_robot\_s20 module
    :show-inheritance:
    :undoc-members:
 
+switchbot\_utility.switchbot\_floor\_lamp module
+------------------------------------------------
+
+.. automodule:: switchbot_utility.switchbot_floor_lamp
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 switchbot\_utility.switchbot\_hub2 module
 -----------------------------------------
 
 .. automodule:: switchbot_utility.switchbot_hub2
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+switchbot\_utility.switchbot\_hub3 module
+-----------------------------------------
+
+.. automodule:: switchbot_utility.switchbot_hub3
    :members:
    :show-inheritance:
    :undoc-members:
@@ -300,6 +316,22 @@ switchbot\_utility.switchbot\_lock\_lite module
    :show-inheritance:
    :undoc-members:
 
+switchbot\_utility.switchbot\_lock\_pro module
+----------------------------------------------
+
+.. automodule:: switchbot_utility.switchbot_lock_pro
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+switchbot\_utility.switchbot\_lock\_ultra module
+------------------------------------------------
+
+.. automodule:: switchbot_utility.switchbot_lock_ultra
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 switchbot\_utility.switchbot\_meter module
 ------------------------------------------
 
@@ -396,6 +428,14 @@ switchbot\_utility.switchbot\_plug\_mini\_us module
    :show-inheritance:
    :undoc-members:
 
+switchbot\_utility.switchbot\_presence\_sensor module
+-----------------------------------------------------
+
+.. automodule:: switchbot_utility.switchbot_presence_sensor
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 switchbot\_utility.switchbot\_rgbic\_neon\_wire\_light module
 -------------------------------------------------------------
 
@@ -448,6 +488,14 @@ switchbot\_utility.switchbot\_strip\_light module
 -------------------------------------------------
 
 .. automodule:: switchbot_utility.switchbot_strip_light
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+switchbot\_utility.switchbot\_strip\_light3 module
+--------------------------------------------------
+
+.. automodule:: switchbot_utility.switchbot_strip_light3
    :members:
    :show-inheritance:
    :undoc-members:
