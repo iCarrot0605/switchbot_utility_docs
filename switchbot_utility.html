@@ -135,6 +135,22 @@
 <li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_ceiling_light_pro.SwithbotCeilingLightPro"><code class="docutils literal notranslate"><span class="pre">SwithbotCeilingLightPro</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_circulator_fan">switchbot_utility.switchbot_circulator_fan module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_fan_speed"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.get_fan_speed()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_mode"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.get_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_nightStatus"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.get_nightStatus()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_oscillation"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.get_oscillation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_power"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.get_power()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_verticalOscillation"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.get_verticalOscillation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_NightLightMode"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.set_NightLightMode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_close_delay"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.set_close_delay()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_wind_mode"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.set_wind_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_wind_speed"><code class="docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan.set_wind_speed()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_color_bulb">switchbot_utility.switchbot_color_bulb module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_color_bulb.SwitchbotColorBulb"><code class="docutils literal notranslate"><span class="pre">SwitchbotColorBulb</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_color_bulb.SwitchbotColorBulb.get_color_temperature"><code class="docutils literal notranslate"><span class="pre">SwitchbotColorBulb.get_color_temperature()</span></code></a></li>
@@ -935,6 +951,168 @@ Switchbot API v1.1 sign header</p>
 <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">switchbot_utility.switchbot_ceiling_light_pro.</span></span><span class="sig-name descname"><span class="pre">SwithbotCeilingLightPro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deviceId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#switchbot_utility.switchbot_ceiling_light_pro.SwithbotCeilingLightPro" title="Link to this definition"></a></dt>
 <dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_ceiling_light.SwitchbotCeilingLight" title="switchbot_utility.switchbot_ceiling_light.SwitchbotCeilingLight"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotCeilingLight</span></code></a></p>
 <p>Switchbot Ceiling Light class</p>
+</dd></dl>
+
+</section>
+<section id="module-switchbot_utility.switchbot_circulator_fan">
+<span id="switchbot-utility-switchbot-circulator-fan-module"></span><h2>switchbot_utility.switchbot_circulator_fan module<a class="headerlink" href="#module-switchbot_utility.switchbot_circulator_fan" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">switchbot_utility.switchbot_circulator_fan.</span></span><span class="sig-name descname"><span class="pre">SwitchbotCirculatorFan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deviceId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_device.SwitchbotDevice" title="switchbot_utility.switchbot_device.SwitchbotDevice"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotDevice</span></code></a>, <a class="reference internal" href="#switchbot_utility.onoff_mixin.OnOffMixin" title="switchbot_utility.onoff_mixin.OnOffMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">OnOffMixin</span></code></a></p>
+<p>Switchbot Circulator Fan class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_fan_speed">
+<span class="sig-name descname"><span class="pre">get_fan_speed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_fan_speed" title="Link to this definition"></a></dt>
+<dd><p>Get fan speed</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1-100</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_mode">
+<span class="sig-name descname"><span class="pre">get_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_mode" title="Link to this definition"></a></dt>
+<dd><p>Return the current mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>&quot;direct&quot;; natural mode: &quot;natural&quot;; sleep mode: &quot;sleep&quot;; ultra quiet mode: &quot;baby&quot;</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>direct mode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_nightStatus">
+<span class="sig-name descname"><span class="pre">get_nightStatus</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_nightStatus" title="Link to this definition"></a></dt>
+<dd><p>Get nightlight status</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>turn off: off; mode 1: 1; mode 2: 2</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_oscillation">
+<span class="sig-name descname"><span class="pre">get_oscillation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_oscillation" title="Link to this definition"></a></dt>
+<dd><p>Get horizontal oscillation</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>turn on: on; turn off: off</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_power">
+<span class="sig-name descname"><span class="pre">get_power</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_power" title="Link to this definition"></a></dt>
+<dd><p>Return current state</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>&quot;on&quot; or &quot;off&quot;</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_verticalOscillation">
+<span class="sig-name descname"><span class="pre">get_verticalOscillation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.get_verticalOscillation" title="Link to this definition"></a></dt>
+<dd><p>Get vertical oscillation</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>turn on: on; turn off: off</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_NightLightMode">
+<span class="sig-name descname"><span class="pre">set_NightLightMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_NightLightMode" title="Link to this definition"></a></dt>
+<dd><p>Set mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>off</strong> -- turn off nightlight,1: bright 2: dim</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>result</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_close_delay">
+<span class="sig-name descname"><span class="pre">set_close_delay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delay</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_close_delay" title="Link to this definition"></a></dt>
+<dd><p>Set close delay time</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>delay</strong> -- 1-36000 minutes?</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>result</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_wind_mode">
+<span class="sig-name descname"><span class="pre">set_wind_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_wind_mode" title="Link to this definition"></a></dt>
+<dd><p>Set mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mode</strong> (<em>direct</em>) -- &quot;direct&quot;; natural mode: &quot;natural&quot;; sleep mode: &quot;sleep&quot;; ultra quiet mode: &quot;baby&quot;</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>result</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_wind_speed">
+<span class="sig-name descname"><span class="pre">set_wind_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">speed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan.set_wind_speed" title="Link to this definition"></a></dt>
+<dd><p>Set fan speed</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>speed</strong> -- 1-100</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>result</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </section>
