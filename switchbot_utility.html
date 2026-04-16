@@ -101,6 +101,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_air_purifier_voc_table.SwitchbotAirPurifierVOCTable"><code class="docutils literal notranslate"><span class="pre">SwitchbotAirPurifierVOCTable</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_battery_circulator_fan">switchbot_utility.switchbot_battery_circulator_fan module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_battery_circulator_fan.SwitchbotBatteryCirculatorFan"><code class="docutils literal notranslate"><span class="pre">SwitchbotBatteryCirculatorFan</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_battery_circulator_fan.SwitchbotBatteryCirculatorFan.get_charging_status"><code class="docutils literal notranslate"><span class="pre">SwitchbotBatteryCirculatorFan.get_charging_status()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#module-switchbot_utility.switchbot_blind_tilt">switchbot_utility.switchbot_blind_tilt module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#switchbot_utility.switchbot_blind_tilt.SwitchbotBlindTilt"><code class="docutils literal notranslate"><span class="pre">SwitchbotBlindTilt</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#switchbot_utility.switchbot_blind_tilt.SwitchbotBlindTilt.close_down"><code class="docutils literal notranslate"><span class="pre">SwitchbotBlindTilt.close_down()</span></code></a></li>
@@ -781,6 +788,30 @@ Switchbot API v1.1 sign header</p>
 <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">switchbot_utility.switchbot_air_purifier_voc_table.</span></span><span class="sig-name descname"><span class="pre">SwitchbotAirPurifierVOCTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deviceId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#switchbot_utility.switchbot_air_purifier_voc_table.SwitchbotAirPurifierVOCTable" title="Link to this definition"></a></dt>
 <dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_air_purifier_voc.SwitchbotAirPurifierVOC" title="switchbot_utility.switchbot_air_purifier_voc.SwitchbotAirPurifierVOC"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotAirPurifierVOC</span></code></a></p>
 <p>Switchbot Air Purifier VOC Table class</p>
+</dd></dl>
+
+</section>
+<section id="module-switchbot_utility.switchbot_battery_circulator_fan">
+<span id="switchbot-utility-switchbot-battery-circulator-fan-module"></span><h2>switchbot_utility.switchbot_battery_circulator_fan module<a class="headerlink" href="#module-switchbot_utility.switchbot_battery_circulator_fan" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_battery_circulator_fan.SwitchbotBatteryCirculatorFan">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">switchbot_utility.switchbot_battery_circulator_fan.</span></span><span class="sig-name descname"><span class="pre">SwitchbotBatteryCirculatorFan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deviceId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#switchbot_utility.switchbot_battery_circulator_fan.SwitchbotBatteryCirculatorFan" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan" title="switchbot_utility.switchbot_circulator_fan.SwitchbotCirculatorFan"><code class="xref py py-class docutils literal notranslate"><span class="pre">SwitchbotCirculatorFan</span></code></a>, <a class="reference internal" href="#switchbot_utility.battery_mixin.BatteryMixin" title="switchbot_utility.battery_mixin.BatteryMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">BatteryMixin</span></code></a></p>
+<p>Switchbot Battery Circulator Fan class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="switchbot_utility.switchbot_battery_circulator_fan.SwitchbotBatteryCirculatorFan.get_charging_status">
+<span class="sig-name descname"><span class="pre">get_charging_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#switchbot_utility.switchbot_battery_circulator_fan.SwitchbotBatteryCirculatorFan.get_charging_status" title="Link to this definition"></a></dt>
+<dd><p>Get charge status</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>charging or uncharged</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </section>
